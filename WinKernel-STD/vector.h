@@ -8,11 +8,12 @@ namespace kstd {
 		using allocator_type = Allocator;
 		using size_typeype = sizet
 		using iterator = LegacyRandomAccessIterator<value_type>;
-		using const_iterator = const kstd::LegacyRandomAccessIterator<value_type>;
-		using reverse_iterator = kstd::reverse_iterator<iterator>;
-		using const_reverse_iterator = kstd::reverse_iterator<const_iterator>;
+		using const_iterator = const LegacyRandomAccessIterator<value_type>;
+		using reverse_iterator = reverse_iterator<iterator>;
+		using const_reverse_iterator = reverse_iterator<const_iterator>;
 		using reference = value_type&;
 		using const_reference = const value_type&;
+		using iterator_type = LegacyRandomAccessIterator;
 		value_type* m_data = nullptr;
 		size_type m_size = 0;
 		size_type m_capacity = 0;

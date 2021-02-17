@@ -65,7 +65,7 @@
     <TargetVersion>Windows10</TargetVersion>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
-    <ConfigurationType>Driver</ConfigurationType>
+    <ConfigurationType>Utility</ConfigurationType>
     <DriverType>KMDF</DriverType>
     <DriverTargetPlatform>Universal</DriverTargetPlatform>
   </PropertyGroup>
@@ -73,7 +73,7 @@
     <TargetVersion>Windows10</TargetVersion>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
-    <ConfigurationType>Driver</ConfigurationType>
+    <ConfigurationType>Utility</ConfigurationType>
     <DriverType>KMDF</DriverType>
     <DriverTargetPlatform>Universal</DriverTargetPlatform>
   </PropertyGroup>
@@ -163,6 +163,7 @@
     <ClInclude Include="concepts.h" />
     <ClInclude Include="cstddef.h" />
     <ClInclude Include="error.h" />
+    <ClInclude Include="initializer_list.h" />
     <ClInclude Include="iostream.h" />
     <ClInclude Include="iterator_funcs.h" />
     <ClInclude Include="iterator_types.h" />
