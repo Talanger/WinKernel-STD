@@ -10,8 +10,4 @@ namespace kstd
 			{  ++i } -> kstd::same_as<I&>;
 			{ *i++ } -> is_referenceable;
 	}&& kstd::copyable<I>;
-
-
-
-
 }

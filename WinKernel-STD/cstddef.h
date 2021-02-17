@@ -1,7 +1,4 @@
 #pragma once
 namespace kstd {
-	#include <crtdefs.h>
-
-
+#include <crtdefs.h>
 }
-

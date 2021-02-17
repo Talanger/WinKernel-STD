@@ -8,15 +8,18 @@ struct Error {
 };
 struct OutOfMemory : Error
 {
+	~OutOfMemory() = delete;
 	static kstd::string what() { return "Out Of Memory During Allocation"; }
 };
 
 struct DanglingPointerDereference : Error
 {
+	~DanglingPointerDereference() = delete;
 	static kstd::string what() { return "Tried to derefrence dangling pointer"; }
 };
 
 struct OutOfBounds : Error
 {
+	~OutOfBounds() = delete;
 	static kstd::string what() { return "Tried to derefrence dangling pointer"; }
 };
